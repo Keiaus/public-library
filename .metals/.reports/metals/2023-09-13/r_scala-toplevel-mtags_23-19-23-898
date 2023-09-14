@@ -1,0 +1,22 @@
+id: file://<WORKSPACE>/Main.scala:[322..322) in Input.VirtualFile("file://<WORKSPACE>/Main.scala", "import scala.io.StdIn.readLine
+import scala.compiletime.ops.int
+
+class Home:
+    
+@main def homepage() = 
+    println("\nLibrary\n")
+    println("1) Sign Up")
+    println("2) Log In")
+    val input = readLine();
+    input match 
+        case 1 => signup()
+        case 2 => login()
+
+@main def signup() = 
+
+
+@main def 
+    ")
+file://<WORKSPACE>/Main.scala:19: error: expected identifier; obtained eof
+    
+    ^

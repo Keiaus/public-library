@@ -1,0 +1,46 @@
+id: file://<WORKSPACE>/Signup.scala:[761..762) in Input.VirtualFile("file://<WORKSPACE>/Signup.scala", "class Signup {
+    // private fields for the user
+    private var id: Int = 0
+    private var first_name: String = " "
+    private var last_name: String = " "
+    private var email: String = " "
+    private var username: String = " "
+    private var phone_number: String = " "
+    private var gender: String = " "
+    private var pass: String = " "
+    private var pass2: String = " "
+
+    // getters
+    def get_id: Int = id
+    def get_first_name: String = first_name
+    def get_last_name: String = last_name
+    def get_email: String = email
+    def get_username: String = username
+    def get_phone_number: String = phone_number
+    def get_gender: String = gender
+    def get_pass: String = pass
+    def get_pass2: String = pass2
+
+    // setters
+    def  = (id: Int): Unit = {
+        this.id = id
+    }
+}
+
+object User {
+    def createUser(
+        id: Int, first_name: String, last_name: String, email: String,
+        username: String, phone_number: String, gender: String, pass: String, pass2: String
+    ): Signup = new Signup()
+}
+
+
+    // val user = User.createUser("John Doe", "jd@yahoo.com")
+
+    // Getters and setters 
+    
+
+")
+file://<WORKSPACE>/Signup.scala:25: error: expected identifier; obtained equals
+    def  = (id: Int): Unit = {
+         ^

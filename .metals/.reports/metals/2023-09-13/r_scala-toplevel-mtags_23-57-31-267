@@ -1,0 +1,18 @@
+id: file://<WORKSPACE>/Signup.scala:[412..412) in Input.VirtualFile("file://<WORKSPACE>/Signup.scala", "class Signup:
+    
+    private var id: Int = 0
+    private var first_name: String = " "
+    private var last_name: String = " "
+    private var email: String = " "
+    private var username: String = " "
+    private var phone_number: String = " "
+    private var gender: String = " "
+    private var pass: String = " "
+    private var pass2: String = " "
+
+    // Getters and setters 
+    def id: Int = id
+    def ")
+file://<WORKSPACE>/Signup.scala:15: error: expected identifier; obtained eof
+    def 
+        ^
