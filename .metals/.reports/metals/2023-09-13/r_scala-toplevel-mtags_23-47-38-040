@@ -1,4 +1,0 @@
-id: file://<WORKSPACE>/Main.scala:[7..7) in Input.VirtualFile("file://<WORKSPACE>/Main.scala", "object ")
-file://<WORKSPACE>/Main.scala:1: error: expected identifier; obtained eof
-object 
-       ^
