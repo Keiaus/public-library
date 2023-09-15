@@ -1,4 +1,5 @@
 import scala.io.StdIn.readLine
+import Login.* 
 
 class Signup:
     // private fields for the user
@@ -35,7 +36,6 @@ class Signup:
         email = new_email
     def set_username(new_username: String): Unit =
         username = new_username
-
     def set_phone_number(new_phone_number: String): Unit =
         phone_number = new_phone_number
     def set_gender(new_gender: String): Unit =
@@ -52,41 +52,66 @@ object User {
     ): Signup = new Signup()
 }
 
-def passChecker(new_pass: String, new_pass2: String): Boolean = 
-    pass = new_pass
-    pass2 = new_pass2
+// writes to a json file
+def write_to_json(): Unit =
+    // To do 
+
+def pass_checker(new_pass: String, new_pass2: String): Boolean = 
     var is_true: Boolean = true
-    if (pass != pass2) {
-        is_true = false
-        print("Passwords don't match! Try again: ")
-        var userInput = readLine()
-        while (pass !)
-    }
+    if (new_pass != new_pass2)
+        !is_true
+    else 
+        is_true
 
 @main def main() = 
     print("Enter your first name: ")
-    val first_name_input = readLine()
+    var first_name_input = readLine()
     println()
     print("Enter your last name: ")
-    val last_name_input = readLine()
+    var last_name_input = readLine()
     println()
     print("Enter your email address: ")
-    val email_input = readLine()
+    var email_input = readLine()
     println()
     print("Enter your username: ")
-    val username_input = readLine()
+    var username_input = readLine()
     println()
     print("Enter your phone number: ")
-    val phone_number_input = readLine()
+    var phone_number_input = readLine()
     println()
     print("Enter your gender: ")
-    val gender_input = readLine()
+    var gender_input = readLine()
     println()
-    print("Choose your password: ")
-    val pass_input = readLine()
+    print("Enter your password: ")
+    var pass_input = readLine()
     println()
     print("Enter your password again: ")
-    val pass2_input = readLine()
+    var pass2_input = readLine()
     println()
 
+    if (pass_checker(pass_input, pass2_input) != true) {
+        println("Passwords must match")
+        println()
+        print("Enter your password: ")
+        pass_input = readLine()
+        println()
+        print("Enter your password again: ")
+        pass2_input = readLine()
+
+        while (pass_checker(pass_input, pass2_input) != true) {
+            println("Passwords must match")
+            println()
+            print("Enter your password: ")
+            pass_input = readLine()
+            println()
+            print("Enter your password again: ")
+            pass2_input = readLine()
+        }
+    }
+
+    else {
+        // Go to login
+    }
+   
+        
     // val new_user = User.createUser("John Doe", "jd@yahoo.com")

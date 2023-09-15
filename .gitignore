@@ -1,3 +1,8 @@
 .metals
 .scala-build
+.bsp
+build.sbt
+example
 .vscode
+project
+target

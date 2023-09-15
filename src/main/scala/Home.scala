@@ -3,11 +3,12 @@ import scala.compiletime.ops.int
 
 class Home {
     def main() = 
-        println("\nLibrary\n")
+        println("\nPublic Library\n")
         println("1) Sign Up")
         println("2) Log In")
-        val input = readLine();
-        input match 
+        var input = readLine();
+        
+        input match
             case 1 => signup()
             case 2 => login()
 
